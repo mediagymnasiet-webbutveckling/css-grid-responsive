@@ -1,30 +1,63 @@
-<div class="container">
-  <header>
-    <h1>Rubrik</h1>
-  </header>
-  <main>
-    <article>
-      <h2>Underrubrik</h2>
-      <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-      </ul>
-    </article>
-    <section>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus. Sit amet consectetur adipiscing elit duis tristique. Viverra accumsan in nisl nisi scelerisque eu ultrices. Pellentesque pulvinar pellentesque habitant morbi tristique. Ante metus dictum at tempor commodo. Eu sem integer vitae justo eget magna. Vitae justo eget magna fermentum iaculis eu non diam phasellus. Pellentesque habitant morbi tristique senectus. Tellus integer feugiat scelerisque varius. Gravida rutrum quisque non tellus orci ac auctor. Enim praesent elementum facilisis leo vel fringilla est ullamcorper. Tellus elementum sagittis vitae et leo duis. Risus commodo viverra maecenas accumsan lacus vel. A diam maecenas sed enim ut sem viverra. In vitae turpis massa sed. Enim lobortis scelerisque fermentum dui. Erat nam at lectus urna duis.</p>
-    </section>
-    <aside>
-      <h2>Underrubrik</h2>
-       <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-      </ul>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>CSS Grid responsive</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1>CSS Grid Layout</h1>
+      <h2>Terminologi</h2>
+    </div>
+    <div class="container">
+      <header>
+        <p>
+          <strong>Grid Area</strong> A grid area consists of one or more
+          adjecent grid cells. It is bound by four grid lines, one on each side
+          of the grid area.
+        </p>
+      </header>
+      <article>
+        <p>
+          <strong>Grid Cell</strong> A grid cell is the smallest unit of the
+          grid. A grid cell is the intersection of a grid row and a grid column.
+        </p>
+      </article>
+      <section>
+        <p>
+          <strong>Vad är CSS Grid?</strong>
+          Grid är ett nytt sätt att skapa layouts med CSS. Man kan med detta
+          skapa en ”rutnäts”-baserad layout som byggs upp via kolumner och
+          rader. Det innebär att man nu kan styla både vertikalt och
+          horisontellt, på ett betydligt enklare sätt. En annan viktig del är
+          att man kan ändra ordningen på sina objekt helt oberoende av ordningen
+          i dokumentobjektmodellen (DOM). Man kan också kombinera Grid med
+          exempelvis Flexbox och float om man skulle vilja. Sammanfattningsvis
+          kan du, med hjälp av Grid, lättare bygga avancerade layouter.
+        </p>
+      </section>
       <aside>
-    </main>
-    <footer>&copy;Ditt namn, dagens datum</footer>
-  </div>
-
+        <p>
+          <strong>Grid Track (Column)</strong> A grid track is the space between
+          two adjacent grid lines, forming a grid column or grid row.
+        </p>
+      </aside>
+      <footer>
+        <p>
+          <strong>Grid Track (Column)</strong> A grid track is the space between
+          two adjacent grid lines, forming a grid column or grid row.
+        </p>
+      </footer>
+    </div>
+    <p>
+      CSS Grid Layout works in most modern browsers. See
+      <a href="https://caniuse.com/#search=css%20grid" target="_blank"
+        >Can I Use.</a
+      >
+    </p>
+  </body>
+</html>

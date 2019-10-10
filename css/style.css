@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Scope+One|Open+Sans:700");
+body {
+  padding: 1rem;
+  background: #fff;
+  font-family: "Scope One", sans-serif;
+  color: rgb(113, 115, 136);
+  font-size: 1rem;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+    "head"
+    "article"
+    "content"
+    "footer";
+}
+
+.container > * {
+  /*border: 1px solid rgb(113, 115, 136);*/
+  padding: 1rem 1rem;
+}
+
+h1 {
+  margin: 0;
+  color: rgb(113, 115, 136);
+  font-size: 4.5rem;
+  font-weight: 700;
+  padding-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  color: #999;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  color: #e4844a;
+}
+
+strong {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+header {
+  border: 2px solid rgb(138, 0, 84);
+  grid-area: head;
+}
+
+header:hover {
+  background-color: rgb(138, 0, 84);
+  border: 2px solid rgb(113, 115, 136);
+  color: #fff;
+}
+
+header h1 {
+  font-weight: 800;
+}
+
+article {
+  padding: 1rem;
+  border: 2px solid rgb(255, 0, 72);
+  grid-area: article;
+}
+
+article:hover {
+  background-color: rgb(255, 0, 72);
+  border: 2px solid rgb(113, 115, 136);
+  color: #fff;
+}
+
+section {
+  background: #fff;
+  border: 2px solid rgb(113, 115, 136);
+  grid-area: content;
+}
+
+section:hover {
+  background-color: rgb(113, 115, 136);
+  color: #fff;
+}
+
+aside {
+  padding: 1rem;
+  border: 2px solid rgba(2, 143, 118, 0.8);
+  display: none;
+  grid-area: sidebar;
+}
+
+aside:hover {
+  background-color: rgba(2, 143, 118, 0.8);
+  border: 2px solid rgb(113, 115, 136);
+  color: #fff;
+}
+
+footer {
+  border: 2px solid rgba(38, 95, 163, 0.8);
+  grid-area: footer;
+}
+
+footer:hover {
+  background-color: rgba(38, 95, 163, 0.8);
+  border: 2px solid rgb(113, 115, 136);
+  color: #fff;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "head head"
+      "article content"
+      "footer footer";
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  aside {
+    display: block;
+  }
+  .container {
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+      "head head sidebar"
+      "article content sidebar"
+      "footer footer sidebar";
+  }
+}
