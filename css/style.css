@@ -11,6 +11,7 @@ body {
 }
 
 .container {
+  /* GRID FOR MOBILE GOES HERE*/
   display: grid;
   grid-gap: 1em;
   grid-template-areas:
@@ -118,6 +119,8 @@ footer:hover {
 }
 
 @media only screen and (min-width: 600px) {
+  /* GRID FOR TABLET GOES HERE*/
+
   .container {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -128,6 +131,8 @@ footer:hover {
 }
 
 @media only screen and (min-width: 900px) {
+
+  /* GRID FOR DESKTOP GOES HERE*/
   aside {
     display: block;
   }
