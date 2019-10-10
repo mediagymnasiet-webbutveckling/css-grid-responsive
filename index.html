@@ -1,63 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>CSS Grid responsive</title>
-  </head>
-  <body>
-    <div class="title">
-      <h1>CSS Grid Layout</h1>
-      <h2>Terminologi</h2>
-    </div>
-    <div class="container">
-      <header>
-        <p>
-          <strong>Grid Area</strong> A grid area consists of one or more
-          adjecent grid cells. It is bound by four grid lines, one on each side
-          of the grid area.
-        </p>
-      </header>
-      <article>
-        <p>
-          <strong>Grid Cell</strong> A grid cell is the smallest unit of the
-          grid. A grid cell is the intersection of a grid row and a grid column.
-        </p>
-      </article>
-      <section>
-        <p>
-          <strong>Vad är CSS Grid?</strong>
-          Grid är ett nytt sätt att skapa layouts med CSS. Man kan med detta
-          skapa en ”rutnäts”-baserad layout som byggs upp via kolumner och
-          rader. Det innebär att man nu kan styla både vertikalt och
-          horisontellt, på ett betydligt enklare sätt. En annan viktig del är
-          att man kan ändra ordningen på sina objekt helt oberoende av ordningen
-          i dokumentobjektmodellen (DOM). Man kan också kombinera Grid med
-          exempelvis Flexbox och float om man skulle vilja. Sammanfattningsvis
-          kan du, med hjälp av Grid, lättare bygga avancerade layouter.
-        </p>
-      </section>
-      <aside>
-        <p>
-          <strong>Grid Track (Column)</strong> A grid track is the space between
-          two adjacent grid lines, forming a grid column or grid row.
-        </p>
-      </aside>
-      <footer>
-        <p>
-          <strong>Grid Track (Column)</strong> A grid track is the space between
-          two adjacent grid lines, forming a grid column or grid row.
-        </p>
-      </footer>
-    </div>
-    <p>
-      CSS Grid Layout works in most modern browsers. See
-      <a href="https://caniuse.com/#search=css%20grid" target="_blank"
-        >Can I Use.</a
-      >
-    </p>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>CSS Grid responsive</title>
+</head>
+
+<body>
+  <div class="title">
+    <h1>CSS Grid Layout</h1>
+    <h2>Terminologi</h2>
+  </div>
+  <div class="container">
+    <header>
+      <p>
+        <strong>Grid Area</strong>
+        En grid area består av en eller flera sammanlänkade grid cells. Den omges av fyra grid lines på var sin sida.
+
+      </p>
+    </header>
+    <article>
+      <p>
+        <strong>Grid Cell</strong>
+        En grid cell är den minsta enheten i en grid. Det är den plats där den vertikala och horisontella spåren möts.
+      </p>
+    </article>
+    <section>
+      <p>
+        <strong>Vad är CSS Grid?</strong>
+        Grid är ett nytt sätt att skapa layouts med CSS. En grid är en yta som har delats in till ett rutnät där
+        ett antal linjer korsar ytan såväl horisontellt som vertikalt. För att göra en container till en grid anger man
+        <b>display: grid</b>. En sida kan ha en eller flera <b>grid containers</b>. De element som bor i grid containern
+        kallas
+        <b>grid
+          items</b>. I grid containern anger man också hur många/storlek på columner och rader mer
+        <b>grid-template-rows</b>
+        och
+        <b>grid-template-columns</b>. Gapet mellan (gutter) anges med <b>grid-gap</b>.
+        Man kan också kombinera Grid med
+        exempelvis flexbox och float om man skulle vilja. Sammanfattningsvis
+        kan du, med hjälp av CSS Grid, lättare bygga avancerade layouter.
+      </p>
+      <img src="images/grid_termonlogi.png" alt="Grid terminologi">
+
+      <p>
+        I detta exempel visas ett exempel på hur man kan använda grid-areas som metod för positionering. M h a
+        mediaqueries kan man omdefinera layouten på de grid-areas man har i <b>grid-template-areas</b>.
+        CSS Grid layout är omfattande och har många möjligheter! Detta är bara en av många :-)
+      </p>
+
+    </section>
+    <aside>
+      <p>
+        <strong>Grid Track (kolumn)</strong> En grid track är avståndet mellan två motstående grid lines, vilket formar
+        en rad eller kolumn.
+      </p>
+    </aside>
+    <footer>
+      <p>
+        <strong>Grid Track (rad)</strong> En grid track är avståndet mellan två motstående grid lines, vilket formar
+        en rad eller kolumn.
+      </p>
+    </footer>
+  </div>
+  <p>
+    CSS Grid Layout fungerar i de flesta moderna webbläsare. Se
+    <a href="https://caniuse.com/#search=css%20grid" target="_blank">Can I Use.</a>
+  </p>
+</body>
+
 </html>
