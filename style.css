@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+  padding: 1rem;
+  background: #fff;  
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas: "head"
+                        "article"
+                        "section"
+                        "footer";
+  
+}
+
+header {
+  background: #cfc;
+  grid-area: head;
+}
+
+header h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+article {
+  background: #ffc;
+   display: flex;
+ align-items: center;
+  flex-direction: column;
+  grid-area: article;
+}
+
+
+article ul {
+  list-style: none;
+    width: 50%;
+ 
+}
+
+article li {
+  border: 1px solid #eee;
+  background: #eee;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+section {
+  background: #fcc;
+  padding: 4rem 3rem;
+  grid-area: section;
+
+}
+
+section p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+aside {
+  background: #5E35B1;
+   display: flex;
+ align-items: center;
+  flex-direction: column;
+    grid-area: sidebar;
+
+}
+
+
+aside ul {
+  list-style: none;
+    width: 50%;
+ 
+}
+
+aside li {
+  border: 1px solid #eee;
+  background: #eee;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+footer {
+  background: #fcf;
+   font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 3rem 0
+   grid-area: footer;
+
+}
+
+ @media only screen and (min-width: 900px) {
+   .container {
+     grid-template-columns: 1fr 1fr;
+     grid-template-areas: "head head"
+                           "article section"
+                          "footer footer";
+   }
+  
+}
+
+ @media only screen and (min-width: 600px) {
+   .container {
+     grid-template-columns: 1fr 3fr 1fr;
+     grid-template-areas: "head head sidebar"
+                          "article section sidebar"
+                          "footer footer sidebar";
+   }
+}
