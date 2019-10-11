@@ -12,13 +12,6 @@ body {
 
 .container {
   /* GRID FOR MOBILE GOES HERE*/
-  display: grid;
-  grid-gap: 1em;
-  grid-template-areas:
-    "head"
-    "article"
-    "content"
-    "footer";
 }
 
 .container > * {
@@ -63,7 +56,6 @@ strong {
 
 header {
   border: 3px solid rgb(138, 0, 84);
-  grid-area: head;
 }
 
 header:hover {
@@ -79,7 +71,6 @@ header h1 {
 article {
   padding: 1rem;
   border: 3px solid rgb(255, 0, 72);
-  grid-area: article;
 }
 
 article:hover {
@@ -91,14 +82,12 @@ article:hover {
 section {
   background: #fff;
   border: 3px solid rgb(113, 115, 136);
-  grid-area: content;
 }
 
 aside {
   padding: 1rem;
   border: 3px solid rgba(2, 143, 118, 0.8);
   display: none;
-  grid-area: sidebar;
 }
 
 aside:hover {
@@ -109,7 +98,6 @@ aside:hover {
 
 footer {
   border: 3px solid rgba(38, 95, 163, 0.8);
-  grid-area: footer;
 }
 
 footer:hover {
@@ -122,25 +110,12 @@ footer:hover {
   /* GRID FOR TABLET GOES HERE*/
 
   .container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "head head"
-      "article content"
-      "footer footer";
   }
 }
 
 @media only screen and (min-width: 900px) {
   /* GRID FOR DESKTOP GOES HERE*/
-  aside {
-    display: block;
-  }
 
   .container {
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-areas:
-      "head head sidebar"
-      "article content sidebar"
-      "footer footer sidebar";
   }
 }
