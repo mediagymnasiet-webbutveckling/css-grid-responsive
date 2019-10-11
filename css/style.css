@@ -21,7 +21,7 @@ body {
     "footer";
 }
 
-.container>* {
+.container > * {
   /*border: 1px solid rgb(113, 115, 136);*/
   padding: 1rem 1rem;
 }
@@ -62,13 +62,13 @@ strong {
 }
 
 header {
-  border: 2px solid rgb(138, 0, 84);
+  border: 3px solid rgb(138, 0, 84);
   grid-area: head;
 }
 
 header:hover {
   background-color: rgb(138, 0, 84);
-  border: 2px solid rgb(113, 115, 136);
+  border: 3px solid rgb(113, 115, 136);
   color: #fff;
 }
 
@@ -78,43 +78,43 @@ header h1 {
 
 article {
   padding: 1rem;
-  border: 2px solid rgb(255, 0, 72);
+  border: 3px solid rgb(255, 0, 72);
   grid-area: article;
 }
 
 article:hover {
   background-color: rgb(255, 0, 72);
-  border: 2px solid rgb(113, 115, 136);
+  border: 3px solid rgb(113, 115, 136);
   color: #fff;
 }
 
 section {
   background: #fff;
-  border: 2px solid rgb(113, 115, 136);
+  border: 3px solid rgb(113, 115, 136);
   grid-area: content;
 }
 
 aside {
   padding: 1rem;
-  border: 2px solid rgba(2, 143, 118, 0.8);
+  border: 3px solid rgba(2, 143, 118, 0.8);
   display: none;
   grid-area: sidebar;
 }
 
 aside:hover {
   background-color: rgba(2, 143, 118, 0.8);
-  border: 2px solid rgb(113, 115, 136);
+  border: 3px solid rgb(113, 115, 136);
   color: #fff;
 }
 
 footer {
-  border: 2px solid rgba(38, 95, 163, 0.8);
+  border: 3px solid rgba(38, 95, 163, 0.8);
   grid-area: footer;
 }
 
 footer:hover {
   background-color: rgba(38, 95, 163, 0.8);
-  border: 2px solid rgb(113, 115, 136);
+  border: 3px solid rgb(113, 115, 136);
   color: #fff;
 }
 
@@ -131,7 +131,6 @@ footer:hover {
 }
 
 @media only screen and (min-width: 900px) {
-
   /* GRID FOR DESKTOP GOES HERE*/
   aside {
     display: block;
